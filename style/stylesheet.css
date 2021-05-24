@@ -10,13 +10,23 @@
   width: 100%;
   height: 80px;
   align-items: center;
-  background-color: #F9F8F8;
+  background-color: #fff;
 	margin-left: auto;
   margin-right: auto;
 	color: #394e6e;
+	position: fixed;
+	z-index: 999999;
+	border-bottom: 1px #323335 solid;
 }
 
 .header__items {
+	width: 600px;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.header__items-search {
 	width: 600px;
   display: flex;
   position: relative;
@@ -41,9 +51,46 @@
 }
 
 .header__items__right {
-  margin-left: 500px;
+  margin-left: auto;
+	margin-right: 20%;
 	width: 300px;
 }
+
+.search__container {
+	display: flex;
+	border: 1px #fff solid;
+	width: 400px;
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.search__button {
+	margin-top: 2px;
+	width: 30px;
+	position: absolute;
+	margin-left: 367px;
+	/* background-color: #3B3F42; */
+	filter: invert(100%);
+}
+
+.search {
+	border: 1px #fff solid;
+	width: 400px;
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	outline: 0;
+	background-color: #3B3F42;
+	transition: 0.07s;
+	font-size: 18px;
+	caret-color: #fff;
+	color: #fff;
+	font-family: 'Inconsolata', monospace;
+	font-weight: 500;
+}
+
+.search::placeholder {color: #818181;}
 
 .header__items__right__list {
   display: flex;
@@ -59,7 +106,7 @@
   text-transform: uppercase;
   cursor: pointer;
 	transition: background-size .3s;
-	border: 2px solid #F9F8F8;
+	border: 2px solid #fff;
 	border-radius: 6px;
 	transition: .3s;
 }
@@ -284,7 +331,7 @@ footer {
 #slider { /*положение слайдера*/
   position: relative;
 	text-align: center;
-  top: 25px;
+  top: 120px;
 }
 
 #slider{ /*центровка слайдера*/
@@ -353,7 +400,7 @@ label, a{ /*при наведении на стрелки или переклю�
 
 .all {
   background-color: #3b3f42;
-	height: 450px;
+	height: 550px;
 }
 
 /*позиция изображения при активации переключателя*/
