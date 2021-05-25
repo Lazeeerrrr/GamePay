@@ -16,11 +16,15 @@
 	color: #394e6e;
 	position: fixed;
 	z-index: 999999;
-	border-bottom: 1px #323335 solid;
+	border-bottom: 1px #919ba7 solid;
+}
+
+.header a {
+	color: #394e6e;
 }
 
 .header__items {
-	width: 600px;
+	width: 1000px;
   display: flex;
   position: relative;
   align-items: center;
@@ -51,8 +55,8 @@
 }
 
 .header__items__right {
-  margin-left: auto;
-	margin-right: 20%;
+  margin-left: 20px;
+	margin-right: 5%;
 	width: 300px;
 }
 
@@ -374,6 +378,39 @@ h4 {
 	width: 100%;
 	height: 100%;
 	background-color: #E5E8E9;
+	display: block;
+}
+
+.mailing__text-block {
+	width: 85%;
+	height: 50%;
+	margin: auto;
+	text-align: justify;
+}
+.mailing__text-description {
+	color: #323335;
+	padding-top: 30px;
+}
+
+.subscribe__button {
+	background-color: #00B599;
+	width: 50%;
+	height: 50%;
+	margin-top: 30px;
+	margin-left: 84px;
+	text-align: center;
+	transition: 0.2s;
+	border: #00B599 1px solid;
+	color: white;
+	text-transform: uppercase;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.subscribe__button:hover {
+	background-color: #fff;
+	border: #00B599 1px solid;
+	color: #00B599;
 }
 
 #slider { /*положение слайдера*/
